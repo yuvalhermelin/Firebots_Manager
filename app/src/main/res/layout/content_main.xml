@@ -45,10 +45,10 @@
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/button"
-        android:layout_below="@+id/agreeCheckBox"
-        android:layout_centerHorizontal="true"
         android:background="#ffffffff"
-        android:textColor="#e31b33e4"/>
+        android:textColor="#e31b33e4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/subteamSpinner"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,6 +57,5 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/nameEditText"
-        android:layout_alignParentEnd="true"
-        android:text="I hereby agree to use my name, and only my name when using this app. I also agree to not abuse my privileges as an admin, semi-admin, or standard user, and will be subject to banning from the app if done so. This application is solely for the Fremont High School Robotics team, and any unknown users will immediately be banned from usage of the app. Please report any bugs or vulnerabilities of the app to the creators of the app. Use app responsibly." />
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
