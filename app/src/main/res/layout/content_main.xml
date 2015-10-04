@@ -17,7 +17,8 @@
         android:id="@+id/nameEditText"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:hint="@string/name_hint"/>
+        android:hint="@string/name_hint"
+        />
 
     <Spinner
         android:layout_width="match_parent"
@@ -35,5 +36,17 @@
         android:layout_below="@+id/subteamSpinner"
         android:layout_centerHorizontal="true"
         android:checked="false"
-        android:paddingTop="0dp"/>
+        android:paddingTop="0dp"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:layout_below="@+id/agreeCheckBox"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffffff"
+        android:textColor="#e31b33e4"/>
 </RelativeLayout>
