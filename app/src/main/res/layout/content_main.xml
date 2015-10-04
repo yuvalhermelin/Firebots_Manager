@@ -17,7 +17,8 @@
         android:id="@+id/nameEditText"
         android:hint="@string/name_hint"
         android:layout_above="@+id/subteamSpinner"
-        android:layout_alignStart="@+id/licenseEditText"/>
+        android:layout_alignStart="@+id/licenseEditText"
+        />
 
     <Spinner
         android:layout_width="match_parent"
@@ -25,7 +26,8 @@
         android:id="@+id/subteamSpinner"
         android:spinnerMode="dropdown"
         android:layout_above="@+id/submitButton"
-        android:layout_alignStart="@+id/nameEditText"/>
+        android:layout_alignStart="@+id/nameEditText"
+        />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -33,9 +35,14 @@
         android:text="@string/agree_message"
         android:id="@+id/agreeCheckBox"
         android:checked="false"
-        android:paddingTop="0dp"
         android:layout_above="@+id/nameEditText"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/subteamSpinner"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -46,7 +53,13 @@
         android:background="#ffffffff"
         android:textColor="#e31b33e4"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/subteamSpinner"/>
+        android:layout_alignStart="@+id/subteamSpinner"
+        />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/submitButton"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,5 +72,7 @@
         android:textStyle="bold"
         android:text="I hereby agree to use my name, and only my name when using this app. I also agree to not abuse my privileges as an admin, semi-admin, or standard user, and will be subject to banning from the app if done so. This application is solely for the Fremont High School Robotics team, and any unknown users will immediately be banned from usage of the app. Please report any bugs or vulnerabilities of the app to the creators of the app. Use app responsibly."
         android:typeface="monospace"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"/>
+
 </RelativeLayout>

@@ -3,4 +3,12 @@
     <string name="action_settings">Settings</string>
     <string name="agree_message">I agree</string>
     <string name="name_hint">Please input your name.</string>
+    <string-array name="subteam_names">
+        <item>Please choose subteam</item>
+        <item>Software</item>
+        <item>Strategy</item>
+        <item>Finance</item>
+        <item>Electrical</item>
+        <item>Mechanical</item>
+    </string-array>
 </resources>
