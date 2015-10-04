@@ -28,6 +28,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mLicenseEditText = (TextView) findViewById(R.id.licenseEditText);
-        mLicenseEditText.setText("I hereby agree to use my name, and only my name when using this app. I also agree to not \n abuse my privileges as an admin, semi-admin, or standard user, and will be subject to banning from the app if done so. This application is solely for the Fremont High School Robotics team, and any unknown users will immediately be banned from usage of the app. Please report any bugs or vulnerabilities of the app to the creators of the app. Use app responsibly.\n");
+        mLicenseEditText.setText("I hereby agree to use my name, and only my name when using this app. I also agree to not abuse my privileges as an admin, semi-admin, or standard user, and will be subject to banning from the app if done so. This application is solely for the Fremont High School Robotics team, and any unknown users will immediately be banned from usage of the app. Please report any bugs or vulnerabilities of the app to the creators of the app. Use app responsibly.\n");
     }
 }
