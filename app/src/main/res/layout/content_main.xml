@@ -16,18 +16,16 @@
         android:ems="10"
         android:id="@+id/nameEditText"
         android:hint="@string/name_hint"
-        android:layout_above="@+id/subteamSpinner"
-        android:layout_alignStart="@+id/licenseEditText"
-        />
+        android:layout_below="@+id/agreeCheckBox"
+        android:layout_alignParentStart="true"/>
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/subteamSpinner"
         android:spinnerMode="dropdown"
-        android:layout_above="@+id/submitButton"
-        android:layout_alignStart="@+id/nameEditText"
-        />
+        android:layout_below="@+id/nameEditText"
+        android:layout_alignParentStart="true"/>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -35,14 +33,8 @@
         android:text="@string/agree_message"
         android:id="@+id/agreeCheckBox"
         android:checked="false"
-        android:layout_above="@+id/nameEditText"
-        android:layout_centerHorizontal="true"
-        />
-
-    <Space
-        android:layout_width="1dp"
-        android:layout_height="30dp"
-        android:layout_alignTop="@id/subteamSpinner"/>
+        android:layout_below="@+id/licenseEditText"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -52,14 +44,8 @@
         android:id="@+id/submitButton"
         android:background="#ffffffff"
         android:textColor="#e31b33e4"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/subteamSpinner"
-        />
-
-    <Space
-        android:layout_width="1dp"
-        android:layout_height="30dp"
-        android:layout_alignTop="@id/submitButton"/>
+        android:layout_below="@+id/subteamSpinner"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,5 +60,11 @@
         android:typeface="monospace"
         android:layout_alignParentEnd="true"
         android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="50px"
+        android:layout_above="@+id/submitButton"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
